@@ -1,16 +1,20 @@
 {
+  "homepage":"http://isaacprogi.github.io/Todo-App",
   "name": "sales-tracker",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
+    "predeploy":"pnpm run build",
+    "deploy":"gh-pages -d build",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "axios": "^0.27.2",
     "date-fns": "^2.29.3",
+    "gh-pages": "^4.0.0",
     "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-calendar": "^3.8.0",
@@ -18,7 +22,6 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.4.0",
-    "react-textfit": "^1.1.1",
     "react-window": "^1.8.7",
     "uuid": "^9.0.0"
   },
