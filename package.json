@@ -1,5 +1,4 @@
 {
-  "homepage":"http://isaacprogi.github.io/Todo-App",
   "name": "sales-tracker",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +6,8 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
     "axios": "^0.27.2",
